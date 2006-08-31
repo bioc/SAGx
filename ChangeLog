@@ -1,0 +1,23 @@
+1.6.3 GSEA.mean.t added, NAMESPACE added, permutation.t withdrawn, gap corrected, class samroc.result added 
+1.5.8 one.probeset.per.gene added, as well as GSEA.t2 and GSEA.Hotelling. The
+functions nn.impute and caha have been withdrawn. Instead the corresponding functions
+in packages impute and cclust are recommended.
+1.5.7 union.of.pways added, and caha withdrawn.
+1.5.6 permutation.t permits na.rate = 0.
+1.5.5 restricted randomisation enabled in samrocN
+
+1.5.3 as.vector introduced in calls to ecdf
+
+v 1.5.2 some minor changes to documentation
+
+v 1.5.1 Documentation and code cleaned up to pass CRAN requirements. 
+
+v 1.4.9 
+pava.fdr changed to output results in the same order as input p-values.
+
+v 1.4.6 
+pava.fdr changed to make use of faster isotonic regression in isoreg
+
+v 1.4.5 
+
+Fstat. Changed to take advantage of vectorised calculations. Permutation of residuals corrected.

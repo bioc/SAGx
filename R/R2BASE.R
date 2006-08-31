@@ -1,0 +1,26 @@
+# Author PBG/28APR06
+R2BASE <- function(context.data = clingen, sample.ids = AZID, expression.data = dats, annotation = annots, out = "u:\\temp\\temp.base"){
+write(paste("BASEfile"), file = out)                                                                                                                                    
+write(paste("section","assays",sep = "\t"),file = out, append = TRUE)                                                                                                                              
+next.line = c(paste("count",ncol(expression.data)-1,sep = "\t"))
+write.table(next.line, file = out, append = TRUE, quote = FALSE, row.names = FALSE, col.names = FALSE)  
+next.line = paste(colnames(context.data), sep = "\t")
+next.line =t(c(paste("columns",next.line,sep = "\t")))
+write.table(next.line, file = out, append = TRUE, col.names = FALSE, row.names = FALSE, quote = FALSE)
+next.line = c("%")
+write(next.line,file = out, append = TRUE) 
+write.table(context.data, file = out, sep = "\t", append = TRUE, quote = FALSE, row.names = FALSE, col.names = FALSE)
+write("",sep = "\t",file = out, append = TRUE)    
+write.table(data.frame("section","spots"), sep = "\t", file = out, append = TRUE, col.names = FALSE, row.names = FALSE, quote = FALSE)
+write("", file = out, append = TRUE)
+next.line = c(colnames(annotation))
+next.line =t(c("columns",next.line,"assayData"))
+write.table(next.line, sep = "\t", file = out, append = TRUE, col.names = FALSE, row.names = FALSE, quote = FALSE)
+next.line = c(sample.ids)
+next.line =t(c("assays",next.line))
+write.table(next.line, file = out, se= "\t", append = TRUE, col.names = FALSE, row.names = FALSE, quote = FALSE)
+expr = merge(annotation, expression.data, by.x = 1, by.y = 1)
+write("%",file = out, append = TRUE)
+write.table(expr, file = out, sep = "\t", append = TRUE, col.names = FALSE, row.names = FALSE, quote = FALSE)
+}
+               

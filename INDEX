@@ -1,0 +1,43 @@
+clin2mim                Output a script file to WinMIM, linking
+                        clinical data and gene expression
+cluster.q               Clustering Goodness measured by Q2
+estimatep0              Estimate proportion unchanged genes
+fetchSignal             Fetch data from the GATC database
+firstpass               First pass description of GeneChip data
+fom                     Clustering Figure of Merit
+fp.fn                   Calculation of fp and fn based on a vector of
+                        p-values
+Fstat                   Calculation of F statistic by gene given a
+                        linear model
+gap                     GAP statistic clustering figure of merit
+GSEA.mean.t             Gene Set Enrichment Analysis using output from
+                        samroc
+JT.test                 Jonckheere-Terpstra trend test
+list.experiments        Display all experiment names and id's
+list.intersection.p     p-value for intersection of two gene lists.
+mat2TeX                 Ouput matrix to LaTeX
+myclus                  A clustering function
+normalise               Normalise arrays
+one.probeset.per.gene   Select the best probeset per gene
+outlier                 Identify outliers in the multivariate
+                        distribution
+p0.mom                  Estimate proportion unchanged genes
+pava                    Pooling of Adjacent Violators
+pava.fdr                Estimate of the FDR and the proportion
+                        unchanged genes
+R2BASE                  Produces a BASE file
+R2mim                   Output a script file to WinMIM
+rank.genes              Rank genes with respect to multiple criteria
+rank.trend              Trens analysis based on ranks
+rsd.test                Compare two groups with respect to their RSD
+                        (CV)
+samroc.result-class     Class "samroc.result" for results of the
+                        function samrocN
+samrocN                 Calculate ROC curve based SAM statistic
+samrocNboot             Calculate ROC curve based SAM statistic
+union.of.pways          Create the union of two pathway lists
+Xprep                   Fitting of a linear model
+Xprep.resid             Calculation of input of residuals from linear
+                        model
+Zfreq                   Bayesian analysis of a Comparative experiment
+                        with two groups
