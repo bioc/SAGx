@@ -1,3 +1,4 @@
+1.6.5 Zfreq removed
 1.6.3 GSEA.mean.t added, NAMESPACE added, permutation.t withdrawn, gap corrected, class samroc.result added 
 1.5.8 one.probeset.per.gene added, as well as GSEA.t2 and GSEA.Hotelling. The
 functions nn.impute and caha have been withdrawn. Instead the corresponding functions
