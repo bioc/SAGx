@@ -7,7 +7,7 @@ export(clin2mim,cluster.q,estimatep0,fetchSignal,firstpass,fom,fp.fn,Fstat,
 gap,GSEA.mean.t,JT.test,list.experiments,list.intersection.p,
 mat2TeX,myclus,normalise,one.probeset.per.gene,outlier,p0.mom,pava,pava.fdr,
 R2BASE, R2mim,rank.genes,rank.trend,rsd.test,samrocN,samrocNboot,union.of.pways,
-Xprep, Xprep.resid, Zfreq)
+Xprep, Xprep.resid)
 
 exportClasses(samroc.result)
 
