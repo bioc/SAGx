@@ -61,7 +61,8 @@ the method can estimate and test one such effect in the presence of explanatory 
 the function \Rfunction{samrocN} provides a solution. Example code now follows. 
 
 <<>>=
-library(multtest)
+library("SAGx")
+library("multtest")
 data(golub)
 set.seed(849867)
 samroc.res <- samrocNboot(data = golub, formula = ~as.factor(golub.cl))
@@ -124,7 +125,7 @@ analyses one KEGG pathway ( 00970 Aminoacyl-tRNA biosynthesis) and outputs a p-v
 the absolute value of the test statistic $d$.
 
 <<>>=
-library(hu6800)
+library("hu6800")
 kegg <- as.list(hu6800PATH2PROBE)
 probeset <- golub.gnames[,3]
 GSEA.mean.t(data = golub, samroc = samroc.res, probeset = probeset, pway = kegg[1],
