@@ -19,6 +19,7 @@ using a bootstrap}
 A list with the components
 \item{cv1}{A vector of the RSD's for sample 1}
 \item{cv2}{A vector of the RSD's for sample 2}
+\item{t.stat}{the test statistic}
 \item{p.vals}{A vector of p-values for the comparison between \eqn{cv1} and \eqn{cv2}}
 
 }
