@@ -1,4 +1,4 @@
-# Author : Per Broberg 20APR04
+# Author : Per Broberg 20APR04, bug fix 09OCT06
 # Based on Broberg P, Estimation of Relative Standard Deviation,(1999) in Drug Development and Industrial Pharmacy, Vol 25 no 1 37-43
 
 rsd.test <- function(data1 = x, data2= y, B = NULL){
