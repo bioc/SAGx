@@ -30,7 +30,8 @@ functions. }
     \item{\code{B}:}{Object of class "integer". The number of premutations.}
     \item{\code{call}:}{Object of class "character". The call to the function.} 
     \item{\code{id}:}{Object of class "character". The probeset ids.} 
-    \item{\code{error.df}:}{Object of class "integer". The error degrees of freedom.} 
+    \item{\code{error.df}:}{Object of class "integer". The error degrees of freedom.}
+    \item{\code{design}:}{Object of class "matrix". The design matrix.} 
     }
 }
 
@@ -49,3 +50,4 @@ functions. }
 \seealso{\code{\link{samrocN}}}
 
 \keyword{methods}
+
