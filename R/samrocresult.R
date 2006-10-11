@@ -17,7 +17,8 @@ setClass("samroc.result",
     B = "integer",
     call = "character",
     id = "character",
-    error.df = "integer"
+    error.df = "integer",
+    design = "matrix"
   )
 )
 
@@ -49,3 +50,4 @@ plot.samroc.result <- function(x,...){
  }
 plot.samroc.result(x,...)
 })
+

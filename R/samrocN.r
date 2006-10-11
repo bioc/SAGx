@@ -1,4 +1,4 @@
-# samrocN, author Per Broberg, version 31AUG02, modified 13NOV02, 27MAY04 , 07OCT05, 31MAY06 #
+# samrocN, author Per Broberg, version 31AUG02, modified 13NOV02, 27MAY04 , 07OCT05, 31MAY06, 10OCT06 #
 samrocN <- function (data = M, formula = ~as.factor(g), contrast = c(0,1), N = c(50, 100, 200, 300), B = 100, perc = 0.6, smooth = FALSE, w = 1, measure = "euclid", probeset = NULL) 
 {
 #  data <- utmat;formula <- ~as.factor(g);contrast <- c(0, 1);N <- c(50,100,200,300)
@@ -97,9 +97,11 @@ res <-   new("samroc.result",
              B = as.integer(B),
              call = as.character(match.call()),
              id = as.character(probeset),
-             error.df = as.integer(utest$f)
+             error.df = as.integer(utest$f),
+             design = as.matrix(utest$design)
 )
 
 res 
         
 }
+

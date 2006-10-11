@@ -123,8 +123,10 @@ res <-   new("samroc.result",
              B = as.integer(B),
              call = as.character(match.call()),
              id = as.character(probeset),
-             error.df = as.integer(utest$f)
+             error.df = as.integer(utest$f),
+             design = as.matrix(utest$design)
 )
 
 res 
 }
+
