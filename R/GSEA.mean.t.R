@@ -15,7 +15,7 @@ maxminus <- function(x) -pmin(x, 0)
 maxmeanf <- function(x) { plusstat <- maxplus(x);minusstat <- maxminus(x);plusmean <- colMeans(plustat);minusmean <- colMeans(minusstat);
                                         rowMax(cbind(plusmean, minusmean))}
 statistic <- switch(EXPR = type, absolute = abs(samroc@d), original = samroc@d, maxmean = maxmeanf(samroc@d))
-null.statistic <- switch(type, absolute = abs(samroc@d0), original = samroc@d0, maxmean = maxmeanf(samroc@d0))
+null.statistic <- switch(EXPR = type, absolute = abs(samroc@d0), original = samroc@d0, maxmean = maxmeanf(samroc@d0))
 mean.statistic <- mean(statistic);sd.statistic <- sd(statistic) 
 mean.null.statistic <- mean(null.statistic);
 sd.null.statistic <- sd(null.statistic)
