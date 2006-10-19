@@ -129,7 +129,7 @@ library("hu6800")
 kegg <- as.list(hu6800PATH2PROBE)
 probeset <- golub.gnames[,3]
 GSEA.mean.t(data = golub, samroc = samroc.res, probeset = probeset, pway = kegg[1],
-absolute = TRUE, two.side = FALSE, B = 10000)
+type = "absolute", two.side = FALSE, B = 10000)
 
 @
 

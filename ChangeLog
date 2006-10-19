@@ -1,3 +1,4 @@
+1.9.4 Updated Vignette
 1.9.3 GSEA.mean.t now can take ExpressionSet as an argument, and restandardisation implemented
 1.9.2 Correct version of gap committed; design slot added to samroc.result with consequences for samrocN and samrocNboot
 1.9.1 bug fix in rsd.test 
