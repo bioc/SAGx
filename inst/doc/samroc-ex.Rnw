@@ -122,7 +122,7 @@ legend(0.1,0.9,pch=NULL,col=c("red","blue"),c("pava local FDR","pava FDR"),lty =
 One can also perform a simple Gene Set Enrichment Analysis based on the output from \Rfunction{samrocNboot} by invoking \Rfunction{GSEA.mean.t},
 cf. \cite{lutian:2005} which describes a similar idea. The package \Rpackage{hu6800} maps KEGG pathways \cite{kegg:2000} onto probeset identifiers. The following code
 analyses one KEGG pathway ( 00970 Aminoacyl-tRNA biosynthesis) and outputs a p-value based on the average over the pathway of 
-the absolute value of the test statistic $d$.
+the absolute value of the test statistic $d$. The algorithm includes restandardization following \cite{efron:tibshirani:2006}.
 
 <<>>=
 library("hu6800")
@@ -132,6 +132,32 @@ GSEA.mean.t(data = golub, samroc = samroc.res, probeset = probeset, pway = kegg[
 type = "absolute", two.side = FALSE, B = 10000)
 
 @
+
+\newpage
+\section{On the calculation of p-values}
+
+Following \cite{tusher:2001}, \cite{broberg:2003} defines a
+permutation p-value for gene $i$ out of a total $N$ as
+
+\begin{equation}\label{pval1}
+    p_{i} = \frac{\#\{d^{*k}(j)|: |d^{*k}(j)| > |d(i)|\} }{N \times B}
+\end{equation}
+
+, denoting by $d(i)$ the test statistic corresponding to gene $i$,
+and by $d^{*k}(i)$ the permutation null statistic in the $k^{th}$
+iteration out of a total $B$.
+
+This has the unfortunate side effect of occasionally returning
+p-values equal to zero. To solve this the definition from
+\cite{davison:1997} is employed. Denote by $F_{n}$ the empirical
+distribution function of all $-|d^{*k}|$. The estimate then
+becomes:
+
+\begin{equation}\label{pval2}
+    p_i = \frac{B\times N\times(1 - F_{n}(-|d(i)|))+ 1}{B\times N + 1}
+\end{equation}
+
+This follows from $\{t^{*} \geq t\} \Leftrightarrow \{ -t^{*} \leq -t\} \Leftrightarrow \{-t^{*} > -t\}^{c}$.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

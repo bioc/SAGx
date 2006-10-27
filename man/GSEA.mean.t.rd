@@ -30,6 +30,8 @@ pway = kegg, type = c("original","absolute","maxmean"), two.side = FALSE, cutoff
 \references{Tian, Lu and Greenberg, Steven A. and Kong, Sek Won and Altschuler, Josiah and Kohane, Isaac S. and Park, Peter J. 
 (2005) Discovering statistically significant pathways in expression profiling studies, \emph{PNAS} Vol. 102, nr. 38, pp. 13544-13549
 
+Bradley Efron and Robert Tibshirani (2006) On testing of the significance of sets of genes, Technical report, Stanford
+
 }
 
 
