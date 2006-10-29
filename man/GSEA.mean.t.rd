@@ -7,7 +7,7 @@
 sets are ranked with respect to regulation as measured by an effect in a linear model using the SAM statistic.}
 
 \usage{GSEA.mean.t(data = X, samroc = samroc.res, probeset = probeset, 
-pway = kegg, type = c("original","absolute","maxmean"), two.side = FALSE, cutoff = c(5,Inf), B = 1000, smooth = FALSE)}
+pway = kegg, type = c("original","absolute"), two.side = FALSE, cutoff = c(5,Inf), B = 1000, smooth = FALSE)}
 
 \arguments{
 \item{data}{data matrix or ExpressionSet}

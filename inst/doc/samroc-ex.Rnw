@@ -148,16 +148,16 @@ and by $d^{*k}(i)$ the permutation null statistic in the $k^{th}$
 iteration out of a total $B$.
 
 This has the unfortunate side effect of occasionally returning
-p-values equal to zero. To solve this the definition from
+$p$-values equal to zero. To solve this the definition from
 \cite{davison:1997} is employed. Denote by $F_{n}$ the empirical
 distribution function of all $-|d^{*k}|$. The estimate then
 becomes:
 
 \begin{equation}\label{pval2}
-    p_i = \frac{B\times N\times(1 - F_{n}(-|d(i)|))+ 1}{B\times N + 1}
+    p_i = \frac{B\times N\times F_{n}(-|d(i)|)+ 1}{B\times N + 1}
 \end{equation}
 
-This follows from $\{t^{*} \geq t\} \Leftrightarrow \{ -t^{*} \leq -t\} \Leftrightarrow \{-t^{*} > -t\}^{c}$.
+This follows from $\{t^{*} \geq t\} \Leftrightarrow \{ -t^{*} \leq -t\}$.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
