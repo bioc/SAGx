@@ -9,7 +9,7 @@ dispersion compared to a reference distribution.}
 \usage{gap(data = swiss,class = g, B = 500)}
 
 \arguments{
-\item{data}{The data matrix}
+\item{data}{The data matrix, with samples (observations) in rows and genes (variables)in columns}
 \item{class}{a vector descibing the cluster memberships of the rows of data}
 \item{B}{the number of bootstrap samples}
 }
@@ -19,7 +19,7 @@ dispersion compared to a reference distribution.}
 \value{The GAP statistic}
 
 \examples{
-library(MASS)
+library("MASS")
 data(swiss)
 cl <- myclus(data = swiss, k = 3)
 gap(swiss,cl$cluster)
