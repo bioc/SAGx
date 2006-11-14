@@ -1,6 +1,6 @@
 # Tibshirani, Walther and Hastie (2000) #
 # Check added 02JUL04;correction to uniform sampling 15MAY06    #
-# se added 10SEP06
+# se added 10SEP06, bug correction 14NOV06
 gap<-function(data=swiss,class=g,B=500){
 # data = swiss; class = cl$cluster; B = 100
 library(stats)
@@ -19,8 +19,7 @@ for (k in 1:B){
          z1[,j] <- runif(nrow(x1), min = min.x, max = max.x) # x1[sample(1:nrow(x1),nrow(x1),replace=TRUE),j]
       }
 z <- crossprod(t(z1),t(veigen))
-tots[k] <- log(sum(by(crossprod(t(z),veigen),factor(class),intern <-
-function(x) sum(dist(x)/ncol(x))/2)))
+tots[k] <- log(sum(by(z, factor(class),intern <- function(x) sum(dist(x)/ncol(x))/2)))
 }
 out <- c(mean(tots)-temp1, sqrt(1+1/B)*sd(tots));names(out) <- c("Gap statistic", "one SE of simulation")
 return(out)

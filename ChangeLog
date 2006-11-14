@@ -1,8 +1,10 @@
+1.9.7 and 6: synchronisation with release version
 1.9.5 Update to Vignette and references
 1.9.4 Updated Vignette
 1.9.3 GSEA.mean.t now can take ExpressionSet as an argument, and restandardisation implemented
 1.9.2 Correct version of gap committed; design slot added to samroc.result with consequences for samrocN and samrocNboot
 1.9.1 bug fix in rsd.test 
+1.7.1 bug fix in gap, thanks to Matthias Kohl
 1.6.5 Zfreq removed
 1.6.3 GSEA.mean.t added, NAMESPACE added, permutation.t withdrawn, gap corrected, class samroc.result added 
 1.5.8 one.probeset.per.gene added, as well as GSEA.t2 and GSEA.Hotelling. The
