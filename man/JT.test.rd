@@ -39,7 +39,7 @@ g <- c(rep(1,5),rep(2,5),rep(3,5))
 # The groups have the medians
 tapply(A, g, median)
 # JT.test indicates that this trend is significant at the 5% level
-JT.test(data = A, class = g, labels = c("GRP 1", "GRP 2", "GRP 3"), alternative = "two-sided")
+JT.test(data = A, class = g, labs = c("GRP 1", "GRP 2", "GRP 3"), alternative = "two-sided")
 }
 
 \author{Per Broberg, acknowledging input from Christopher Andrews at SUNY Buffalo}
