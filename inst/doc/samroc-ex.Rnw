@@ -65,10 +65,10 @@ library("SAGx")
 library("multtest")
 data(golub)
 set.seed(849867)
-samroc.res <- samrocNboot(data = golub, formula = ~as.factor(golub.cl))
+samroc.res <- samrocN(data = golub, formula = ~as.factor(golub.cl))
 show(samroc.res)
 @
-The function \Rfunction{samrocNboot} is used to perform a penalised \textit{t}-test. Its value is an object of class
+The function \Rfunction{samrocN} is used to perform a penalised \textit{t}-test. Its value is an object of class
 \Rclass{samroc.result}. The functions \Rfunction{show} and \Rfunction{plot} are defined for such objects. In Figure \ref{density} the densities of the 
 test statistic and its permutation null distribution are displayed. The graph was produced by invoking the \Rfunction{plot} function
 

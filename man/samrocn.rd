@@ -36,11 +36,11 @@ and \eqn{s} the standard error.  At the heart of the method lies an estimate of 
 test is calibrated so that these are minimised. For calculation of \eqn{p}-values a bootstrap procedure is invoked. Further details are given in Broberg (2003).
 Note that the definition of p-values follows that in Davison and Hinkley (1997), in order to avoid p-values that equal zero.
 
-The p-values are calculated through permuting the rows of the design matrix for the columns such that the coresponding contrast 
-coefficient is not zero. This means that factors not tested are kept fixed. NB This may be adequate for testing a factor with two levels, but it 
-is not adequate for all linear models.
-
-samrocN calls the function Xprep which has been improved in terms of speed. } 
+The p-values are calculated through permuting the residuals obtained from the null model, assuming that this corresponds to the full model 
+except for the parameter being tested, coresponding to the contrast 
+coefficient not equal to zero. This means that factors not tested are kept fixed. NB This may be adequate for testing a factor with two levels or a
+regression coefficient (correlation), but it is not adequate for all linear models.
+ } 
 
 \references{
 Tusher, V.G., Tibshirani, R., and Chu, G. (2001) Significance analysis of microarrays applied to
