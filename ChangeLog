@@ -1,4 +1,5 @@
-19.10 changes to samrocN prompted by questions put by Jianjun Yu, University of Michigan
+1.9.12 new version GSEA.mean.t, based on normal approximation and Wilcoxon signed ranks statistic
+1.9.10 changes to samrocN prompted by questions put by Jianjun Yu, University of Michigan
 1.9.8 changes to JT.test prompted by suggestions from Christopher Andrews, SUNY Buffalo
 1.9.7 and 6: synchronisation with release version
 1.9.5 Update to Vignette and references
