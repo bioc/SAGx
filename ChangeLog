@@ -1,3 +1,4 @@
+1.9.13 correction to GSEA.mean.t documentation and absolute option
 1.9.12 new version GSEA.mean.t, based on normal approximation and Wilcoxon signed ranks statistic
 1.9.10 changes to samrocN prompted by questions put by Jianjun Yu, University of Michigan
 1.9.8 changes to JT.test prompted by suggestions from Christopher Andrews, SUNY Buffalo

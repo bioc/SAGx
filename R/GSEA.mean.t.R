@@ -68,7 +68,7 @@ analysis <- function(x){
   pw <- 2*pmin(pw, 1 - pw)}  
 #    pj <- (B*Fn(-abs(obs.stat))+1)/(B+1)
     pj <- pnorm(mean.stat, mean = null.mean, sd = null.sd)
-    pj <- 2*pmin(pj, 1 - pj)
+    if(type == "original") pj <- 2*pmin(pj, 1 - pj) else pj <- 1 - pj
     if(type == "original") list(c(pj, mean.stat, pw, median.stat))
     else list(c(pj, mean.stat, median.stat))
 }
