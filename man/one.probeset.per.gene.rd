@@ -18,7 +18,8 @@ and outputs the probeset id per gene that corresponds to the highest present rat
 
 \value{A vector of probeset id's.}
 
-\details{It is assumed that missing gene symbol is coded as ""}
+\details{It is assumed that missing gene symbol is coded as "". Note also that other measurements than present rate ay be useful as selection criterion, such 
+some variatuin measure. The function only assumes that high values are desirable.}
 
 \note{Experimental function. Feedback appreciated.}
 

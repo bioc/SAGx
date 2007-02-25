@@ -12,12 +12,12 @@ pway = kegg, type = c("original","absolute"), two.side = FALSE, cutoff = c(5,Inf
 
 \arguments{
 \item{samroc}{an object of class samroc.result}
-\item{probeset}{the Affymetrix identifiers or NULL, if data is ExpressionSet}
+\item{probeset}{the Affymetrix identifiers}
 \item{pway}{a list of pathways or gene sets}
 \item{type}{if "absolute" value of the absolute value of the samroc test statistic is used. If "original" no transformation.}
-\item{two.side}{if TRUE a two-sided test is performed. Currently only one-sided test allowd}
+\item{two.side}{if TRUE a two-sided test is performed. Currently only two-sided test when type = "original" and else one-sided}
 \item{cutoff}{Gene sets with the number of members not falling within the interval given by \emph{cutoff} are excluded}
-item{restand}{if TRUE a 'restandardization' following Efron and Tibshirani (2006) is performed}
+\item{restand}{if TRUE a 'restandardization' following Efron and Tibshirani (2006) is performed}
 }
 
 \author{Per Broberg}
@@ -25,8 +25,8 @@ item{restand}{if TRUE a 'restandardization' following Efron and Tibshirani (2006
 \value{A matrix with columns normal approximation p-values, mean statistic, median statistic, and if type = "original", also 
 Wilcoxon signed ranks statistic based p-value.}
 
-\details{Restandardization based on Efron and Tibshirani (2006) introduced. For normal approximation both the mean and the
-variance of the mean or Wilcoxon statistic is obtained from the permutation distribution included in the samroc.result object.
+\details{Restandardization based on Efron and Tibshirani (2006) introduced. For normal approximation of the gene set statistic 
+both the mean of the statstic, or the variance (and likewise for the Wilcoxon statistic), are obtained from the permutation distribution included in the samroc.result object.
 Note that this will account for the dependency between genes.}
 
 \references{Tian, Lu and Greenberg, Steven A. and Kong, Sek Won and Altschuler, Josiah and Kohane, Isaac S. and Park, Peter J. 

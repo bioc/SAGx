@@ -7,7 +7,7 @@
 the false positive and false negative rates.}
 
 \usage{samrocN(data=M,formula=~as.factor(g), contrast=c(0,1), N = c(50, 100, 200, 300),B=100, perc = 0.6, 
- smooth = FALSE, w = 1, measure = "euclid", probeset = NULL)}
+ smooth = FALSE, w = 1, measure = "euclid", p0 = NULL, probeset = NULL)}
 
 \arguments{
 \item{data}{The data matrix}
@@ -19,6 +19,7 @@ the false positive and false negative rates.}
 \item{smooth}{if TRUE, the std will be estimated as a smooth function of expression level}
 \item{w}{the relative weight of false positives}
 \item{measure}{the goodness criterion}
+\item{p0}{the proportion unchanged probesets; if NULL p0 will be estimated}
 \item{probeset}{probeset ids;if NULL then "probeset 1", "probeset 2", ... are used.}
 }
 

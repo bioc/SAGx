@@ -16,7 +16,7 @@ dispersion compared to a reference distribution.}
 
 \author{Per Broberg}
 
-\value{The GAP statistic}
+\value{The GAP statistic and the standard deviation}
 
 \examples{
 library("MASS")
