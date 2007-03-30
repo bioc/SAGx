@@ -10,7 +10,7 @@ the false positive and false negative rates.}
  smooth = FALSE, w = 1, measure = "euclid", p0 = NULL, probeset = NULL)}
 
 \arguments{
-\item{data}{The data matrix}
+\item{data}{The data matrix, or ExpressionSet}
 \item{formula}{a linear model formula}
 \item{contrast}{the contrast to be estimnated }
 \item{N}{the size of top lists under consideration}

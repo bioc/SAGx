@@ -8,7 +8,7 @@ sets are ranked with respect to regulation as measured by an effect in a linear 
 applications include two-group comparisons or simple linear regression to clinical variable or gene expression of a given gene.}
 
 \usage{GSEA.mean.t(samroc = samroc.res, probeset = probeset, 
-pway = kegg, type = c("original","absolute"), two.side = FALSE, cutoff = c(5,Inf), restand = TRUE)}
+pway = kegg, type = c("original","absolute"), two.side = FALSE, cutoff = c(10,Inf), restand = TRUE)}
 
 \arguments{
 \item{samroc}{an object of class samroc.result}
@@ -38,4 +38,3 @@ Bradley Efron and Robert Tibshirani (2006) On testing of the significance of set
 
 
 \keyword{multivariate}
-

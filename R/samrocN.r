@@ -5,6 +5,7 @@
 samrocN <- function (data = M, formula = ~as.factor(g), contrast = c(0, 
     1), N = c(50, 100, 200, 300), B = 100, perc = 0.6, smooth = FALSE, 
     w = 1, measure = "euclid", p0 = NULL, probeset = NULL) {
+    if(is(data, "ExpressionSet")){data <- exprs(data);if(is.null(probeset)) probeset <- rownames(data)} 
     data <- as.matrix(data)
     nrows <- nrow(data)
     ncols = ncol(data)
