@@ -8,13 +8,13 @@ sets are ranked with respect to regulation as measured by an effect in a linear 
 applications include two-group comparisons or simple linear regression to clinical variable or gene expression of a given gene.}
 
 \usage{GSEA.mean.t(samroc = samroc.res, probeset = probeset, 
-pway = kegg, type = c("original","absolute"), two.side = FALSE, cutoff = c(10,Inf), restand = TRUE)}
+pway = kegg, type = c("original","absolute", "maxmean"), two.side = FALSE, cutoff = c(10,Inf), restand = TRUE)}
 
 \arguments{
 \item{samroc}{an object of class samroc.result}
 \item{probeset}{the Affymetrix identifiers}
 \item{pway}{a list of pathways or gene sets}
-\item{type}{if "absolute" value of the absolute value of the samroc test statistic is used. If "original" no transformation.}
+\item{type}{if "absolute" value of the absolute value of the samroc test statistic is used. If "original" no transformation. "maxmean" not available.}
 \item{two.side}{if TRUE a two-sided test is performed. Currently only two-sided test when type = "original" and else one-sided}
 \item{cutoff}{Gene sets with the number of members not falling within the interval given by \emph{cutoff} are excluded}
 \item{restand}{if TRUE a 'restandardization' following Efron and Tibshirani (2006) is performed}

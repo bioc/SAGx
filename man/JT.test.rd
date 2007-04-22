@@ -12,7 +12,7 @@
 \arguments{
 \item{data}{A matrix with genes in rows and subjects in columns}
 \item{class}{the column labels, if not an ordered fctor it will be redefined to be one.}
-\item{labels}{the labels of the categories coded by class}
+\item{labs}{the labels of the categories coded by class}
 }
 
 \value{an object of class JT-test, which extends the class htest, and includes the following slots
