@@ -6,12 +6,14 @@
 \description{Calculates a goodness of clustering measure based on the average 
 dispersion compared to a reference distribution.}
 
-\usage{gap(data = swiss,class = g, B = 500)}
+\usage{gap(data = swiss,class = g, B = 500, cluster.func = myclus)}
 
 \arguments{
 \item{data}{The data matrix, with samples (observations) in rows and genes (variables)in columns}
 \item{class}{a vector descibing the cluster memberships of the rows of data}
 \item{B}{the number of bootstrap samples}
+\item{cluster.func}{a function taking the arguments \emph{data} and \emph{k} (number of clusters) and outputs cluster assignments
+as list elements \emph{cluster} ( accessed by object$cluster ).}
 }
 
 \author{Per Broberg}

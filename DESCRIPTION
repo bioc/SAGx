@@ -1,6 +1,6 @@
 Package: SAGx
-Version: 1.11.0
-Date: 22APR07
+Version: 1.11.1
+Date: 22MAY07
 Title: Statistical Analysis of the GeneChip
 Author: Per Broberg
 Maintainer: Per Broberg <pi.broberg@swipnet.se>

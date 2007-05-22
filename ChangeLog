@@ -1,3 +1,5 @@
+1.11.1 change to gap in order to recluster the null distribution, in compliance with the main reference. Bug report by
+David Resendes 
 1.9.14 additions to documentation and dependence on sma removed
 1.9.13 correction to GSEA.mean.t documentation and absolute option
 1.9.12 new version GSEA.mean.t, based on normal approximation and Wilcoxon signed ranks statistic
