@@ -25,6 +25,5 @@ A list with components
 
 }
 \author{Per Broberg}
-}
 
 \keyword{htest}

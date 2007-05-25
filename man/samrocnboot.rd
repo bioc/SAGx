@@ -25,7 +25,6 @@ smooth=FALSE, w = 1, measure = "euclid", probeset = NULL)}
 \author{Per Broberg and Freja Vamborg}
 
 \value{An object of class samroc.result.}
-}
 
 \details{The test statistic is based on the one in Tusher et al (2001):
 
@@ -71,5 +70,4 @@ Broberg. P: Statistical methods for ranking differentially expressed genes. Geno
 \url{ http://genomebiology.com/2003/4/6/R41}
 
 
-}
 }

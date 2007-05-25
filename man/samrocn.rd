@@ -26,7 +26,6 @@ the false positive and false negative rates.}
 \author{Per Broberg}
 
 \value{An object of class samroc.result.}
-}
 
 \details{The test statistic is based on the one in Tusher et al (2001):
 

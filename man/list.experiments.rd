@@ -2,7 +2,6 @@
 \alias{list.experiments}
 \title{Display all experiment names and id's}
 \description{Display all experiment names and id's in the GATC database}
-}
 
 \usage{
 list.experiments(channel, chip = "HG_U95Av2")

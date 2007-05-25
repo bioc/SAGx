@@ -2,7 +2,6 @@
 \alias{fetchSignal}
 \title{Fetch data from the GATC database}
 \description{Fetch FILENAME, PROBESET, SIGNAL and ABS\_CALL from the GATC database}
-}
 
 \usage{
 fetchSignal(experiment="AZ33 ALI", channel, chip="HG_U95Av2")

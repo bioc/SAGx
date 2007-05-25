@@ -1,7 +1,6 @@
 \name{firstpass}
 \alias{firstpass}
 \title{First pass description of GeneChip data}
-}
 
 \description{Does a first-pass analysis for a comparative experiment. This
 includes the calculation of means and confidence intervals for the groups, and finally
