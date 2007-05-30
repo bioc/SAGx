@@ -1,10 +1,13 @@
 # Tibshirani, Walther and Hastie (2000) #
 # Check added 02JUL04;correction to uniform sampling 15MAY06    #
 # se added 10SEP06, bug correction 14NOV06
-gap<-function(data=swiss,class=g,B=500){
+# bug correction 22MAY07
+gap <- function(data=swiss,class=g,B=500, cluster.func = myclus){
 # data = swiss; class = cl$cluster; B = 100
 library(stats)
-if (min(table(class))==1) stop("Singleton clusters not allowed")
+class.tab <- table(class)
+nclus <- length(class.tab)
+if (min(class.tab)==1) stop("Singleton clusters not allowed")
 if(!(length(class)==nrow(data))) stop("Length of class vector differs from nrow of data") 
 data <- as.matrix(data) 
 data <- scale(data, center = TRUE, scale = FALSE)
@@ -19,9 +22,12 @@ for (k in 1:B){
          z1[,j] <- runif(nrow(x1), min = min.x, max = max.x) # x1[sample(1:nrow(x1),nrow(x1),replace=TRUE),j]
       }
 z <- crossprod(t(z1),t(veigen))
-tots[k] <- log(sum(by(z, factor(class),intern <- function(x) sum(dist(x)/ncol(x))/2)))
+new.clus <- cluster.func(data = z, k = nclus)
+new.class <- new.clus$cluster  
+tots[k] <- log(sum(by(z, factor(new.class),intern <- function(x) sum(dist(x)/ncol(x))/2)))
 }
 out <- c(mean(tots)-temp1, sqrt(1+1/B)*sd(tots));names(out) <- c("Gap statistic", "one SE of simulation")
 return(out)
 }
+
 
