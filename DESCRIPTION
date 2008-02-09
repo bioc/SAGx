@@ -1,9 +1,10 @@
 Package: SAGx
-Version: 1.13.0
-Date: 28MAY07
+Version: 1.13.1
+
+Date: 30NOV07
 Title: Statistical Analysis of the GeneChip
 Author: Per Broberg
-Maintainer: Per Broberg <pi.broberg@swipnet.se>
+Maintainer: Per Broberg "pi" and a dot "broberg" followed by the special a and "gmail.com"
 Depends: R (>= 2.4.0), stats, multtest, methods
 Suggests: KEGG, hu6800
 Imports: Biobase

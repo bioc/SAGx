@@ -57,8 +57,8 @@ if(ties == FALSE) STDH <-sqrt((n.obs^2*(2*n.obs + 3)-sum(ni^2*(2*ni + 3)))/72 ) 
 
 # continuity correction remains
 
-ps <- pnorm((sums-EH)/STDH)
-
+ps <- pnorm((EH - sums)/STDH)
+S1 <- (EH - sums)/EH # 09Feb2008 added, see reference Flandre and O'Quigley
 pvalues <- switch(alternative,
        "two-sided" = 2*pmin(ps,1-ps), "decreasing" = ps, "increasing" = 1-ps)
 
@@ -77,9 +77,8 @@ ifelse(is.null(labs),colnames(medians)[-ncol(medians)] <- class.tab, colnames(me
 colnames(medians)[ncol(medians)] <- "rank correlation"
 rownames(medians) <- rownames(data)
 utres <- list(statistic = sums, parameter = NULL, p.value = pvalues, method = "Jonckheere-Terpstra", 
-null.value = NULL, alternative = alternative, medians = medians, data.name = data.name)
+null.value = NULL, alternative = alternative, medians = medians, S1 = S1, data.name = data.name)
 class(utres) <- c("JT-test","htest")
 names(utres$statistic) <- "J"
 return(utres)
 }
-
