@@ -52,7 +52,7 @@ samroc.res <- samrocNboot(data = golub, formula = ~as.factor(golub.cl))
 # The proportion of unchanged genes is estimated at
 samroc.res@p0
 # The fudge factor equals
- samroc.res$s0
+ samroc.res@s0
 # A histogram of p-values
  hist(samroc.res@pvalues)
  # many genes appear changed
