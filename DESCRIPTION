@@ -1,14 +1,14 @@
 Package: SAGx
-Version: 1.13.2
-Date: 09FEB08
+Version: 1.13.3
+Date: 2008-02-16
 Title: Statistical Analysis of the GeneChip
 Author: Per Broberg
-Maintainer: Per Broberg,  "pi" and a dot "broberg" followed by the special a and "gmail.com"
-Depends: R (>= 2.4.0), stats, multtest, methods
+Maintainer: Per Broberg,  <pi.broberg@gmail.com>
+Depends: R (>= 2.5.0), stats, multtest, methods
 Suggests: KEGG, hu6800
 Imports: Biobase
 Description: A package for retrieval, preparation and analysis of data from the Affymetrix GeneChip. In particular the issue of identifying  differentially expressed genes is addressed.
-License: GNU GPL. 
+License: GPL-2 | GPL-3 
 LazyLoad: yes
 URL: http://home.swipnet.se/pibroberg/expression_hemsida1.html
 biocViews: Microarray, OneChannel, Preprocessing, DataImport, Statistics, DifferentialExpression, Clustering, MultipleComparisons
