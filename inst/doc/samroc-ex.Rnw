@@ -159,6 +159,7 @@ becomes:
 
 This follows from $\{t^{*} \geq t\} \Leftrightarrow \{ -t^{*} \leq -t\}$.
 
+Various functions from SAGx were used in \cite{StefanPierrou03152007}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage

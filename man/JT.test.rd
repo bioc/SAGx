@@ -48,6 +48,6 @@ JT.test(data = A, class = g, labs = c("GRP 1", "GRP 2", "GRP 3"), alternative = 
 \references{
 Lehmann, EH (1975) \emph{Nonparametrics: Statistical Methods Based on Ranks} p. 233. Holden Day}
 Flandre, Philippe and O'Quigley, John, \emph{Predictive strength of Jonckheere's test for trend: an application to genotypic scores in HIV infection},
-Statistics in Medicine, 2007, 26, 24, 4441-4454  
+Statistics in Medicine, 2007, 26, 24, 4441-4454 } 
 
 \keyword{nonparametric}
