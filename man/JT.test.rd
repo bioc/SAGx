@@ -27,9 +27,12 @@
 \item{S1}{Predictive strength}
 }
 
-\details{Assumes that groups are given in increasing order, if the class variable is not an ordered factor, it will be redefined to be one.
+\details{Assumes that groups are given in increasing order, if the class variable is not an ordered factor, it will be redefined to be one. The p-value
+is calculated through a normal approximation.\cr
 
-The implementation owes to suggestions posted by to R list. The definition of predictive strength appears in Flandre and O'Quigley.}
+The implementation owes to suggestions posted by to R list. \cr
+
+The definition of predictive strength appears in Flandre and O'Quigley.}
 
 
 \examples{
@@ -46,7 +49,7 @@ JT.test(data = A, class = g, labs = c("GRP 1", "GRP 2", "GRP 3"), alternative = 
 \author{Per Broberg, acknowledging input from Christopher Andrews at SUNY Buffalo}
 
 \references{
-Lehmann, EH (1975) \emph{Nonparametrics: Statistical Methods Based on Ranks} p. 233. Holden Day}
+Lehmann, EH (1975) \emph{Nonparametrics: Statistical Methods Based on Ranks} p. 233. Holden Day} \cr
 Flandre, Philippe and O'Quigley, John, \emph{Predictive strength of Jonckheere's test for trend: an application to genotypic scores in HIV infection},
 Statistics in Medicine, 2007, 26, 24, 4441-4454 } 
 
