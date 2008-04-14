@@ -49,7 +49,7 @@ JT.test(data = A, class = g, labs = c("GRP 1", "GRP 2", "GRP 3"), alternative = 
 \author{Per Broberg, acknowledging input from Christopher Andrews at SUNY Buffalo}
 
 \references{
-Lehmann, EH (1975) \emph{Nonparametrics: Statistical Methods Based on Ranks} p. 233. Holden Day} \cr
+Lehmann, EH (1975) \emph{Nonparametrics: Statistical Methods Based on Ranks} p. 233. Holden Day \cr
 Flandre, Philippe and O'Quigley, John, \emph{Predictive strength of Jonckheere's test for trend: an application to genotypic scores in HIV infection},
 Statistics in Medicine, 2007, 26, 24, 4441-4454 } 
 
