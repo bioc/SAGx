@@ -1,5 +1,5 @@
 %\VignetteIndexEntry{samroc - example}
-%\VignetteDepends{SAGx,multtest, hu6800}
+%\VignetteDepends{SAGx,multtest, hu6800.db}
 %\VignetteKeywords{Expression Analysis}
 %\VignettePackage{SAGx}
 
@@ -120,12 +120,12 @@ legend(0.1,0.9,pch=NULL,col=c("red","blue"),c("pava local FDR","pava FDR"),lty =
 \end{figure}
 
 One can also perform a simple Gene Set Enrichment Analysis based on the output from \Rfunction{samrocNboot} by invoking \Rfunction{GSEA.mean.t},
-cf. \cite{lutian:2005} which describes a similar idea. The package \Rpackage{hu6800} maps KEGG pathways \cite{kegg:2000} onto probeset identifiers. The following code
+cf. \cite{lutian:2005} which describes a similar idea. The package \Rpackage{hu6800.db} maps KEGG pathways \cite{kegg:2000} onto probeset identifiers. The following code
 analyses one KEGG pathway ( 00970 Aminoacyl-tRNA biosynthesis) and outputs a p-value based on the average over the pathway of 
 the absolute value of the test statistic $d$. The algorithm includes restandardization following \cite{efron:tibshirani:2006}.
 
 <<>>=
-library("hu6800")
+library("hu6800.db")
 kegg <- as.list(hu6800PATH2PROBE)
 probeset <- golub.gnames[,3]
 GSEA.mean.t(samroc = samroc.res, probeset = probeset, pway = kegg[1],
