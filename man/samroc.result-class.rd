@@ -13,7 +13,7 @@ functions. }
 
 \section{Slots}{
   \describe{
-    \item{\code{di}:}{Object of class "numeric". Observed test statistic.}
+    \item{\code{d}:}{Object of class "numeric". Observed test statistic.}
     \item{\code{diff}:}{Object of class "numeric". Estimate of effect, e.g. difference between group means.}
     \item{\code{se}:}{Object of class "numeric". Standard error of \code{diff}.}
     \item{\code{d0}:}{Object of class "matrix". Permutation test statistics.}

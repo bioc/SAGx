@@ -30,7 +30,7 @@
 \details{Assumes that groups are given in increasing order, if the class variable is not an ordered factor, it will be redefined to be one. The p-value
 is calculated through a normal approximation.\cr
 
-The implementation owes to suggestions posted by to R list. \cr
+The implementation owes to suggestions posted to R list. \cr
 
 The definition of predictive strength appears in Flandre and O'Quigley.}
 
