@@ -9,7 +9,7 @@ rank.trend(data = x, pattern = c(1:ncol(data)), har = FALSE)
 }
 \arguments{
 \item{data}{A data frame with one array in each column}
-\item{pattern} {A permutation of the integers 1:ncol(data)} 
+\item{pattern}{A permutation of the integers 1:ncol(data)} 
 \item{har}{logical parameter indicating whether or not a score based on Hardy's theorem shall be calculated.}
 }
 \value{

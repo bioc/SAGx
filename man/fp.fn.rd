@@ -14,7 +14,7 @@ fp.fn(ps = pvals, B = 100)
 }
 \arguments{
 \item{ps}{a vector of p-values}
-\item{B} {the number of bootstrap loops done by the function estimatep0 called by fp.fn} 
+\item{B}{the number of bootstrap loops done by the function estimatep0 called by fp.fn} 
 }
 \value{
 A list with components

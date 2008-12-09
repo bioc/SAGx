@@ -11,7 +11,7 @@ firstpass(data = D, probes = probes , g, log = FALSE, present = NULL, labels = N
 }
 \arguments{
 \item{data}{A data frame with one array in each column}
-\item{probes} {a vector containing the names of the probes in the same order as rows in D} 
+\item{probes}{a vector containing the names of the probes in the same order as rows in D} 
 \item{g}{A vector with the groups for the arrays, eg. TREATMENT and CONTROL}
 \item{present}{A dataframe with the Present calls, 3 = P, 2 = M, 1 = A.}
 \item{log}{if TRUE then data are log transformed through t(x) = log(1+x) and geometric means are calculated}

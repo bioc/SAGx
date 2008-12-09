@@ -12,7 +12,7 @@ R2mim(probe="12345_at",N=10,data=inm,out="u:\\study\\copd\\mimscr.txt")
 }
 \arguments{
 \item{probe}{The name of the candidate probe}
-\item{N} {The number of highly correlated probes to be studied} 
+\item{N}{The number of highly correlated probes to be studied} 
 \item{data}{The input data set}
 \item{out}{The MIM script file}
 }
