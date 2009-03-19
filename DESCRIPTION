@@ -1,5 +1,5 @@
 Package: SAGx
-Version: 1.17.2
+Version: 1.17.3
 Title: Statistical Analysis of the GeneChip
 Author: Per Broberg
 Maintainer: Per Broberg,  <pi.broberg@gmail.com>
@@ -10,4 +10,4 @@ Description: A package for retrieval, preparation and analysis of data from the 
 License: LGPL
 LazyLoad: yes
 URL: http://home.swipnet.se/pibroberg/expression_hemsida1.html
-biocViews: Microarray, OneChannel, Preprocessing, DataImport, Statistics, DifferentialExpression, Clustering, MultipleComparisons
+biocViews: Microarray, OneChannel, Preprocessing, DataImport, Bioinformatics, DifferentialExpression, Clustering, MultipleComparisons
