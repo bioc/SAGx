@@ -14,7 +14,7 @@ clin2mim(variable="FEV1.ACTUAL",data=dbs,clindat=clinical,probes=probes,N=10,out
 \item{variable}{Clinical variable to be examined}
 \item{data}{The input data set, with subject id in first column.}
 \item{clindat}{The input clinical data, with subject id in first column}
-\item{probes}{The name of the probes in the order of {\it data}}
+\item{probes}{The name of the probes in the order of \emph{data}}
 \item{N}{The number of highly correlated probes to be studied} 
 \item{out}{The MIM script file}
 }
