@@ -1,5 +1,5 @@
 # Per Broberg 21FEB01, updated 30JUN05 #
-R2mim<-function(probe="12345_at",N = 10,data=inm,out="u:\\study\\copd\\mimscr.txt"){
+R2mim<-function(probe="12345_at",N = 10,data=inm,out="u:/study/copd/mimscr.txt"){
    lprob<-nchar(probe) # Extract data regarding the candidate probe # 
    x<-data[(substring(paste(data[,1]),1,lprob)==paste(probe) ),];x<-t(x[-1])
    y<-data;y<-t(y[,-1])

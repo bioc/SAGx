@@ -6,7 +6,7 @@
 \description{The function produces a BASE file for import to Gene Data Viewer.}
 
 \usage{R2BASE(context.data = clingen, sample.ids = AZID, expression.data = dats, 
-annotation = annots, out = "u:\\\temp\\\temp.base")}
+annotation = annots, out = "u:/temp/temp.base")}
 
 \arguments{
 \item{context.data}{e.g. a clinical database}

@@ -1,5 +1,5 @@
 # Author PBG/28APR06
-R2BASE <- function(context.data = clingen, sample.ids = AZID, expression.data = dats, annotation = annots, out = "u:\\temp\\temp.base"){
+R2BASE <- function(context.data = clingen, sample.ids = AZID, expression.data = dats, annotation = annots, out = "u:/temp/temp.base"){
 write(paste("BASEfile"), file = out)                                                                                                                                    
 write(paste("section","assays",sep = "\t"),file = out, append = TRUE)                                                                                                                              
 next.line = c(paste("count",ncol(expression.data)-1,sep = "\t"))

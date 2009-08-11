@@ -1,6 +1,6 @@
 \name{rank.trend}
 \alias{rank.trend}
-\title{Trens analysis based on ranks}
+\title{Trend analysis based on ranks}
 
 \description{Ranks are used to score genes with respect to degree of agreement to a given trend or pattern, Lehmann (1974) p.294.}
 

@@ -8,7 +8,7 @@ for the N most highly correlated probes (in absolute value). Here N is an input 
 a relevant graphical model for the dependencies between the probes.}
 
 \usage{
-R2mim(probe="12345_at", N=10, data=inm, out="u:\\\study\\\copd\\\mimscr.txt")
+R2mim(probe="12345_at", N=10, data=inm, out="u:/study/copd/mimscr.txt")
 }
 \arguments{
 \item{probe}{The name of the candidate probe}
