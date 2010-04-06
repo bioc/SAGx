@@ -16,14 +16,14 @@
 \item{digits}{number of digits}
 \item{rowNameTitle}{title above row names}
 \item{file}{output file}
-\item{roundNum}{}
-\item{rowNameAlign}{alignment of row names}
-\item{matAlign}{}
-\item{prtHead}{}
-\item{prtEnd}{}
-\item{extraTitle}{}
-\item{rowNameCols}{}
-\item{append}{}
+\item{roundNum}{integer indicating the precision}
+\item{rowNameAlign}{alignment of row names, default is "l"}
+\item{matAlign}{alignment of columns, default is "r"}
+\item{prtHead}{if TRUE the begin\{tabular\} line is produced}
+\item{prtEnd}{if TRUE the end\{tabular\} line is produced}
+\item{extraTitle}{extra title}
+\item{rowNameCols}{the row name column, default is 1}
+\item{append}{if TRUE the output is appended to file, deafult is FALSE}
 
 
 }
