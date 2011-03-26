@@ -7,7 +7,7 @@
 \description{The test is testing for a monotone trend in terms of the class parameter.
              The number of times that an individual of a higher class has a higher gene expression forms a basis for the inference.}
 
-\usage{trendA <- JT.test(data, class, labs = c("NS", "HS", "COPD0", "COPD1", "COPD2"), alternative = c("increasing", "decreasing", "two-sided"))}
+\usage{JT.test(data, class, labs = c("NS", "HS", "COPD0", "COPD1", "COPD2"), alternative = c("increasing", "decreasing", "two-sided"))}
 
 \arguments{
 \item{data}{A matrix with genes in rows and subjects in columns}
