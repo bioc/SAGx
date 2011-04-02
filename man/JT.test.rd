@@ -7,12 +7,14 @@
 \description{The test is testing for a monotone trend in terms of the class parameter.
              The number of times that an individual of a higher class has a higher gene expression forms a basis for the inference.}
 
-\usage{JT.test(data, class, labs = c("NS", "HS", "COPD0", "COPD1", "COPD2"), alternative = c("increasing", "decreasing", "two-sided"))}
+\usage{JT.test(data, class, labs = NULL, alternative = c("two-sided", "decreasing", "increasing"), ties = FALSE)}
 
 \arguments{
 \item{data}{A matrix with genes in rows and subjects in columns}
 \item{class}{the column labels, if not an ordered fctor it will be redefined to be one.}
 \item{labs}{the labels of the categories coded by class}
+\item{alternative}{two-sided, decreasing or increasing}
+\item{ties}{Adjustment for ties}
 }
 
 \value{an object of class JT-test, which extends the class htest, and includes the following slots
