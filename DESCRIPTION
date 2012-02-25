@@ -1,12 +1,12 @@
 Package: SAGx
 Type: Package
 Title: Statistical Analysis of the GeneChip
-Version: 1.29.0
+Version: 1.29.1
 Author: Per Broberg
 Maintainer: Per Broberg,  <pi.broberg@gmail.com>
 Depends: R (>= 2.5.0), stats, multtest, methods
 Suggests: KEGG.db, hu6800.db
-Imports: Biobase
+Imports: Biobase, BiocGenerics
 Description: A package for retrieval, preparation and analysis of data from the Affymetrix GeneChip. In particular the issue of identifying  differentially expressed genes is addressed.
 License: GPL-3
 LazyLoad: yes

@@ -1,7 +1,7 @@
 useDynLib(SAGx)
 import( stats)
 import(Biobase)
-importFrom("graphics", "plot")
+importFrom(BiocGenerics, "plot")
 # are multtest and sma needed?
 # importFrom(stats, kruskal.test,pr.comp)
 export(clin2mim,cluster.q,estimatep0,fetchSignal,firstpass,fom,fp.fn,Fstat,
