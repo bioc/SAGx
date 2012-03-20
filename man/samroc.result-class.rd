@@ -3,6 +3,7 @@
 \alias{samroc.result-class}
 \alias{show,samroc.result-method}
 \alias{plot,samroc.result-method}
+\alias{plot,samroc.result,ANY-method}
 
 
 \title{Class "samroc.result" for results of the function samrocN}
