@@ -43,7 +43,7 @@ plot.samroc.result <- function(x,...){
  densobs <- density(x@d)
  x.coord <- quantile(dens0$x, probs = 0.55)
  y.coord <- quantile(c(dens0$y,densobs$y), probs = 1)
- plot.density(dens0, main = "", col = "green", xlab = "Statistic")
+ plot(dens0, main = "", col = "green", xlab = "Statistic")
  lines(densobs, col = "red")
  legend(x.coord,y.coord, legend = c("Observed statistic", "Null distribution"), col = c("red","green"),
             lty = 1, cex = .8, y.int = 1)
