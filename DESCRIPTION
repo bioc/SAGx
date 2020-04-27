@@ -1,7 +1,7 @@
 Package: SAGx
 Type: Package
 Title: Statistical Analysis of the GeneChip
-Version: 1.61.0
+Version: 1.62.0
 Author: Per Broberg
 Maintainer: Per Broberg, <pi.broberg@gmail.com>
 Depends: R (>= 2.5.0), stats, multtest, methods
